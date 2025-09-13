@@ -1,0 +1,154 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 6rem;
+  background-color:#161625;
+}
+.navbar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121220;
+  padding: 2rem 2rem;
+  z-index: 1000;
+}
+.navbar .logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin:0;
+  padding-right: 4rem;
+  font-size:1.6rem;
+}
+.navbar li {
+  margin-left: 2vw;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.navbar a:hover {
+  color: #ddd;
+}
+
+h1 {
+  font-size: 4.5rem;        /* Size of the text */
+  font-weight: bold;      /* Boldness */
+  color: #fbfbfb;            /* Text color */
+  text-align: center;     /* Centered */
+  margin-top: 6rem;    /* Space below */
+  font-family: 'Arial', sans-serif; /* Font */
+  margin-top: 0rem;
+  margin-bottom: 2.5rem;
+}
+
+h2{
+  font-size: 4.5rem;        /* Size of the text */
+  font-weight: bold;      /* Boldness */
+  color: #fbfbfb;            /* Text color */
+  text-align: center;     /* Centered */
+  margin-top: 6rem;    /* Space below */
+  font-family: 'Arial', sans-serif; /* Font */
+  margin-top: 0rem;
+  margin-bottom: 2.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;        /* Size of the text */
+  font-weight: bold;      /* Boldness */
+  color: #fbfbfb;            /* Text color */
+  text-align: center;     /* Centered */
+  margin-top: 6rem;    /* Space below */
+  font-family: 'Arial', sans-serif; /* Font */
+  margin-bottom: 2.5rem;
+}
+
+p {
+  font-size: 4rem;        /* Size of the text */
+  color: #ffffff;            /* Text color */
+  text-align: center;     /* Centered */
+  font-family: 'Arial', sans-serif; /* Font */
+  max-width: 50%;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.rounded-box {
+  width: 25rem;
+  height: 35rem;
+  background-color: lightblue;
+  border: 0rem solid #333;
+  border-radius: 5rem; 
+  margin-right: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #2575fc;
+  color: white;
+  text-decoration: none;
+  font-size: 4rem;
+  font-weight: 600;
+  border-radius: 4rem;
+  box-shadow: 0 2rem 4rem rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  width:27rem;
+  height:6rem;
+}
+.btn:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 3rem 4rem rgba(0,0,0,0.25);
+  background-color: #1e52ad;
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3rem 4rem rgba(0,0,0,0.15);
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  max-width: 600px;
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+th, td {
+  text-align: left;
+  padding: 1.5rem 2rem;
+  font-size: 1.25rem;
+}
+th {
+  background: linear-gradient(90deg, rgb(44, 133, 189), rgb(44, 112, 189));
+  color: white;
+  font-size: 1.5rem;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tr:hover {
+  background-color: #e6f2e6;
+  transition: 0.3s;
+}
+caption {
+  caption-side: top;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
