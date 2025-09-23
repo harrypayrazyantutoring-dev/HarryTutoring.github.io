@@ -420,7 +420,7 @@ caption {
     margin-right: 0;
   }
   .servicesHeader{
-    padding-top:2rem; font-size:5rem; margin-bottom:0rem;
+    padding-top:3rem; font-size:5rem; margin-bottom:0rem;
   }
   .price{
     margin-top:1.5rem; font-size:3.5rem; margin-bottom:1rem;
@@ -458,5 +458,6 @@ caption {
     transition: 0.3s;
   }
 }
+
 
 
