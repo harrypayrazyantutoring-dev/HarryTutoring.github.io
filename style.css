@@ -206,7 +206,7 @@ caption {
   margin-right: 0;
 }
 .servicesHeader{
-  padding-top:2rem; font-size:6rem; margin-bottom:0rem;
+  padding-top:3rem; font-size:6rem; margin-bottom:0rem;
 }
 .rounded-box h3{
   margin-bottom: 0rem;
@@ -458,4 +458,5 @@ caption {
     transition: 0.3s;
   }
 }
+
 
