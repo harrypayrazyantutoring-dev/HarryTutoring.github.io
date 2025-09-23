@@ -9,6 +9,7 @@
 <body>
   <div class="navbar">
     <a href="#" class="logo">Harry SAT Tutoring</a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
@@ -18,26 +19,34 @@
   </div>
   <h1 style="padding-top:3rem; margin-bottom: 1rem;"> Portfolio</h1>
   <h3 style="margin-top: 0; margin-bottom: 0;">An overview of my experience and achievements</h2>
-  <div style="display:flex; justify-content:center; align-items:center;">
+  <div class="center">
     <div class="rounded-box" style="background-color: rgb(13, 179, 185);">
-      <h2 style="margin-top: 2rem; margin-bottom:0rem; color:#161625; display:flex; justify-content:center; align-items:center;">Top 1%</h2>
+      <h2>Top 1%</h2>
       <div style="display:flex; justify-content:center; align-items:center;">
-        <p style="font-size: 4.3rem; max-width: 90%; text-align: center; margin-top: 1rem; color:#161625">A 790 scorer on the SAT Math section</p>
+        <p>A 790 scorer on the SAT Math section</p>
       </div>
     </div>
     <div class="rounded-box" style="background-color: rgb(13, 185, 147);">
-      <h2 style="font-size: 4rem;margin-top: 1rem; margin-bottom:0rem; color:#161625; display:flex; justify-content:center; align-items:center;">Tutoring Experience</h2>
+      <h2>Tutoring Experience</h2>
       <div style="display:flex; justify-content:center; align-items:center;">
-        <p style="font-size: 4rem; max-width: 90%; text-align: center; margin-top: 1rem; color:#161625">Experience working as a math tutor at Mathnasium</p>
+        <p >Experience working as a math tutor at Mathnasium</p>
       </div>
     </div>
     <div class="rounded-box" style="background-color: rgb(13, 185, 90); ">
-      <h2 style="font-size: 4rem;margin-top: 1rem; margin-bottom:0rem; color:#161625; display:flex; justify-content:center; align-items:center;">Math Experience</h2>
+      <h2>Math Experience</h2>
       <div style="display:flex; justify-content:center; align-items:center;">
-        <p style="font-size: 3.8rem; max-width: 90%; text-align: center; margin-top: 1rem; color:#161625">Taken math classes up to Calculus 3 and Linear Algebra</p>
+        <p>Taken math classes up to Calculus 3 and Linear Algebra</p>
       </div>
     </div>
   </div>
-  <h3 style="margin-top:1rem;">Ready to raise your math score? Visit the services page to learn about what I offer!</h3>
+  <h3 style="margin-top:1rem;">Ready to raise your math score? <br> Visit the services page to learn about what I offer!</h3>
+  <script>
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".navbar ul");
+
+    toggleBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
 </body>
 </html>

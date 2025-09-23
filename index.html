@@ -9,6 +9,7 @@
 <body>
   <div class="navbar">
     <a href="#" class="logo">Harry SAT Tutoring</a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
@@ -16,15 +17,24 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
-  <h1 style="padding-top:3rem"> Harry Payrazyan SAT Math Tutoring</h1>
-  <div style="display:flex; justify-content:center; align-items:center;">
-    <img src="Images/Self.jpg" alt="Profile Picture" style="width:28rem; height:auto;">
-    <p style="padding-left: 3rem; line-height: 5.5rem; text-align: left;">Hey! I'm Harry, a top 1% scorer on the SAT Math section.<br> I offer private SAT Math tutoring, focused on identifying students' weak points and helping them reach their full potential.</p>
+  <h1 style="padding-top:2rem; margin-bottom:0;"> Harry SAT Math Tutoring</h1>
+  <div class="center">
+    <p class="intro mobile" style="margin-bottom: 0.2rem;">Hey! I'm Harry, a top 1% scorer on the SAT Math section.</p>
+    <img src="images/Self.jpg" alt="Profile Picture" class="profile-pic">
+    <p class="intro mobile" style="margin-top:1rem;">I offer private SAT Math tutoring, focused on identifying students' weak points and helping them reach their full potential.</p>
+    <p class="intro desktop">Hey! I'm Harry, a top 1% scorer on the SAT Math section.<br> I offer private SAT Math tutoring focused on identifying students' weak points and helping them reach their full potential.</p>
   </div>
-  <div style="display:flex; justify-content:center; align-items:center;">
-    <p style="font-size:2.7rem;color: #e0e0e0;">Visit Portfolio page to learn more about me!</p>
+  <div class="center">
+    <p class="visit"><b>Visit Portfolio page to learn more about me!</b></p>
+
   </div>
- 
+  <script>
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".navbar ul");
+
+    toggleBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
 </body>
 </html>
-

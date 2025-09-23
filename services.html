@@ -9,6 +9,7 @@
 <body>
   <div class="navbar">
     <a href="#" class="logo">Harry SAT Tutoring</a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
@@ -16,37 +17,41 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
-  <h1 style="padding-top:3rem; font-size:6rem; margin-bottom:0rem;">Tutoring Services</h1>
+  <h1 class="servicesHeader">Tutoring Services</h1>
   <div style="display:flex; justify-content:center; align-items:center; margin-bottom:0rem;  ">
-    <p style="max-width: 70vw;  font-size:3.5rem; padding-left: 3rem; line-height: 5.5rem; margin-bottom: 0rem;">I help high school students one on one to boost their SAT Math scores. Here's how it works:</p>
+    <p class="servicesParagraph">I help high school students one on one to boost their SAT Math scores. Here's how it works:</p>
   </div>
-  <div style="display:flex; justify-content:center; align-items:center; margin-bottom:0rem;">
-    <div class="rounded-box" style="width:75rem; height:15rem;background-color: rgb(52, 163, 180); margin-right:0; ">
-      <h3 style="margin-bottom: 0rem;font-size:4rem;margin-top:1.5rem; color:#ffffff; ">Step 1</h3>
+  <div style="display:flex; justify-content:center; align-items:center; margin-bottom:0rem; flex-direction: column;">
+    <div class="rounded-box" style="max-width:75rem; min-height:5rem; width:90%; height:auto;background-color: rgb(52, 163, 180); margin-right:0; margin-left: 0; margin-top:1.5rem;">
+      <h3>Step 1</h3>
       <div style="display:flex; justify-content:center; align-items:center;">
-        <p style="max-width:90%;margin-top:0.7rem;font-size: 3.2rem; color:#ffffff; ">Before our first lesson, I will send a diagnostic test to see where the student is at.</p>
+        <h4>Before our first lesson, I will send a diagnostic test to see where the student is at.</h4>
+      </div>
+    </div>
+    <div class="rounded-box" style="max-width:75rem; min-height:5rem; width:90%;height:auto;background-color: rgb(44, 133, 189); margin-right:0; margin-left: 0; ">
+      <h3 >Step 2</h3>
+      <div style="display:flex; justify-content:center; align-items:center;">
+        <h4>We will do targeted lessons up until their SAT Test.</h4>
+      </div>
+    </div>
+    <div class="rounded-box" style="max-width:75rem; min-height:5rem; width:90%;height:auto;background-color: rgb(44, 90, 189); margin-right:0; margin-left: 0; ">
+      <h3 >Step 3</h3>
+      <div style="display:flex; justify-content:center; align-items:center;">
+        <h4>Further refinements come from student practice tests.</h4>
       </div>
     </div>
   </div>
-  <div style="display:flex; justify-content:center; align-items:center; margin-bottom:0rem; ">
-    <div class="rounded-box" style="width:75rem; height:15rem; background-color: rgb(44, 133, 189);margin-right:0;">
-      <h3 style="margin-bottom: 0rem;font-size:4rem;margin-top:1.5rem; color:#ffffff; ">Step 2</h3>
-      <div style="display:flex; justify-content:center; align-items:center;">
-        <p style="max-width:90%;margin-top:0.7rem;font-size: 3.2rem; color:#ffffff; ">We will do targeted lessons up until their SAT Test.</p>
-      </div>
-    </div>
-  </div>
-  <div style="display:flex; justify-content:center; align-items:center; margin-bottom:0rem; ">
-    <div class="rounded-box" style="width:75rem; height:15rem;background-color: rgb(44, 90, 189);margin-right:0;">
-      <h3 style="margin-bottom: 0rem;font-size:4rem;margin-top:1.5rem; color:#ffffff; ">Step 3</h3>
-      <div style="display:flex; justify-content:center; align-items:center;">
-        <p style="max-width:90%;margin-top:0.7rem;font-size: 3.2rem; color:#ffffff; ">Further refinements come from student practice tests.</p>
-      </div>
-    </div>
-  </div>
-  <h3 style="margin-top:1.5rem; font-size:4rem; margin-bottom:1rem;">All this for just $20/hour</h3>
+  <h3 class="price">All this for just $25/hour</h3>
   <div style="display:flex; justify-content:center; align-items:center; margin-bottom:2rem; margin-top:0rem; ">
     <a href="contact.html" class="btn" style="display:flex; justify-content:center; align-items:center; margin-bottom:0rem;">Get Started</a>
   </div>
+  <script>
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".navbar ul");
+
+    toggleBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
 </body>
 </html>
